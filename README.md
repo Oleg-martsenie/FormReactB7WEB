@@ -1,26 +1,11 @@
-# Base do exercício de construção de um formulário em React + Typescript.
+# Form Project made in React + Typescript.
 
-## Instruções
+## GIF
 
-Clone o projeto e em seguida rode o comando para instalar as dependências:
+<img src="ReactFormB7WEB.gif">
 
-`npm install`
+<hr>
 
-Após instaladas as dependências, o comando para rodar o projeto é:
+<p>This is my first one using thin incredible lib; the result, as you gonna see above is really astonishing.</p>
 
-`npm run dev`
-
-Ótimo. Boa sorte!
-
----
-
-## Resolução do exercício
-
-O exercício resolvido está no arquivo `src/App_RESOLVIDO.tsx`.
-
-OBS: Não olhe o arquivo antes de tentar fazer sozinho, por favor.
-
----
-
-## Dúvidas?
-Nos envie um e-mail para suporte@b7web.com.br que te ajudamos com prazer.
+<h1>If you wanna see this in your machine, dont forget to clone the project and set the <kbd>npm install</kbd> . </h1>"# FormReactB7WEB" 

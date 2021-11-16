@@ -1,42 +1,165 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;900&display=swap');
+
+:root{
+  --main-color:#fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  transition: all .2s linear;
+  outline: none;
+  border: none;
+  background-color: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+header, section {
+  padding: 2rem 9%;
+}
+
+.heading {
+  font-size: 9rem;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: .05rem var(--main-color);
+  letter-spacing: .2rem;
   text-align: center;
+  pointer-events:  none;
+  position: relative;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading span {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: var(--main-color);
+  font-size: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  background-color: #EEE;
+}
+
+.header .logo h1 {
+  font-size: 4rem;
+  letter-spacing: .1rem;
+}
+
+.header .menu nav a {
+  margin-left: 9rem;
+  font-size: 2rem;
+  color: #222;
+}
+
+.home {
+  background-image: url('https://cdn.wallpapersafari.com/73/58/7rWChT.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #FFF;
+  min-height: 100vh;
+
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.home .form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.home .form .fieldInput h6 {
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+.home .form .fieldInput input {
+  font-weight: 200;
+  width: 50%;
+  font-size: 1.7rem;
+  margin: .2rem 0 2rem 0;
+  border-radius: .5rem;
+  padding: .8rem 1rem;
+}
+
+.answer-area {
+  background-color: rgba(0, 0, 0, 0.212);
+  min-height: 100%;
+  border-radius: .5rem;
+  width: 50%;
+  padding: 2rem 5%;
+}
+
+.answer-area p {
+  font-size: 2rem;
+  line-height: 2;
+  font-weight: 200;
+  letter-spacing: .2rem;
+  word-break: break-all;
+  color: #EEE;
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }  
+  header, section {
+    padding: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 768px) {
+  .header .logo h1 {
+    font-size: 3rem;
+  }
+  .header .menu nav a {
+    font-size: 1.5rem;
+    margin-left: 3rem;
+  }
+  .heading {
+    font-size: 6rem;
+  }
+  .home .form .fieldInput input {
+    width: 100%;
+  }
+  .answer-area {
+    width: 100%;
   }
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .header .logo h1 {
+    font-size: 1.2rem;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+  .heading span {
+    font-size: 2rem;
+  }
 }
